@@ -59,7 +59,7 @@ app.get('/profile', async function(req, res) {
   // let dbConnection = res.locals.dbConnection;
 let dbConnection = app.get('dbConnection')
   const todo = await getTodoById(dbConnection, "todos", { name: req.query.name });
-  res.json({success: 'get call succeed harsh!', url: todo});
+  res.json({success: 'get call succeed harsh !', url: todo});
 });
 
 app.get('/profile/abc',async function(req, res) {
