@@ -71,7 +71,8 @@
         },
         "profileLambda": {
           "deploymentBucketName": "amplify-test3-qa-164113-deployment",
-          "s3Key": "amplify-builds/profileLambda-34414e4a636a76567a53-build.zip"
+          "s3Key": "amplify-builds/profileLambda-70506d4c70765a436954-build.zip",
+          "testEnv": "qa"
         },
         "loginLambda": {
           "deploymentBucketName": "amplify-test3-qa-164113-deployment",
@@ -79,9 +80,12 @@
         },
         "test3logging": {
           "deploymentBucketName": "amplify-test3-qa-164113-deployment",
-          "s3Key": "amplify-builds/test3logging-LambdaLayerVersion7fd079ea-build.zip"
+          "s3Key": "amplify-builds/test3logging-LambdaLayerVersion3bf7315b-build.zip"
         },
-        "iplLambda": {}
+        "iplLambda": {
+          "deploymentBucketName": "amplify-test3-qa-164113-deployment",
+          "s3Key": "amplify-builds/iplLambda-5469453266717963594a-build.zip"
+        }
       }
     }
   }
