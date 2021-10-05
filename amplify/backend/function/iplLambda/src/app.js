@@ -32,7 +32,7 @@ app.use(function(req, res, next) {
 
 app.get('/ipl', function(req, res) {
   // Add your code here
-  res.json({success: 'get call succeed ipl qa!', url: req.url});
+  res.json({success: 'get call succeed ipl qa 2!', url: req.url});
 });
 
 app.get('/ipl/*', function(req, res) {

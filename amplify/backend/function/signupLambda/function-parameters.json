@@ -5,7 +5,7 @@
       "resourceName": "test3logging",
       "version": "Always choose latest version",
       "isLatestVersionSelected": true,
-      "env": "dev"
+      "env": "qa"
     }
   ],
   "permissions": {

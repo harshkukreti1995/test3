@@ -20,19 +20,23 @@
     }
   },
   "Resources": {
-    "LambdaLayerVersionab7d6e86": {
+    "LambdaLayerVersion7fd079ea": {
       "Type": "AWS::Lambda::LayerVersion",
       "Properties": {
-        "CompatibleRuntimes": [
-          "nodejs14.x"
-        ],
+        "CompatibleRuntimes": {
+          "Ref": "runtimes"
+        },
         "Content": {
           "S3Bucket": {
             "Ref": "deploymentBucketName"
           },
-          "S3Key": "amplify-builds/test3logging-LambdaLayerVersionab7d6e86-build.zip"
+          "S3Key": {
+            "Ref": "s3Key"
+          }
         },
-        "Description": "Updated layer version 2021-10-05T06:19:30.589Z",
+        "Description": {
+          "Ref": "description"
+        },
         "LayerName": {
           "Fn::Sub": [
             "test3logging-${env}",
@@ -47,19 +51,23 @@
       "DeletionPolicy": "Delete",
       "UpdateReplacePolicy": "Retain"
     },
-    "LambdaLayerPermissionPublicab7d6e86": {
+    "LambdaLayerPermissionPrivate7fd079ea": {
       "Type": "AWS::Lambda::LayerVersionPermission",
       "Properties": {
         "Action": "lambda:GetLayerVersion",
-        "LayerVersionArn": "arn:aws:lambda:us-east-1:066299566766:layer:test3logging-dev:16",
-        "Principal": "*"
+        "LayerVersionArn": {
+          "Ref": "LambdaLayerVersion7fd079ea"
+        },
+        "Principal": {
+          "Ref": "AWS::AccountId"
+        }
       }
     }
   },
   "Outputs": {
     "Arn": {
       "Value": {
-        "Ref": "LambdaLayerVersionab7d6e86"
+        "Ref": "LambdaLayerVersion7fd079ea"
       }
     }
   }

@@ -81,10 +81,7 @@
           "deploymentBucketName": "amplify-test3-qa-164113-deployment",
           "s3Key": "amplify-builds/test3logging-LambdaLayerVersion7fd079ea-build.zip"
         },
-        "test3test": {
-          "deploymentBucketName": "amplify-test3-qa-164113-deployment",
-          "s3Key": "amplify-builds/test3test-LambdaLayerVersionb7a7b57a-build.zip"
-        }
+        "iplLambda": {}
       }
     }
   }
