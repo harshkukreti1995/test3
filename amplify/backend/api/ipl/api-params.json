@@ -1,0 +1,45 @@
+{
+  "paths": [
+    {
+      "name": "/ipl",
+      "lambdaFunction": "iplLambda",
+      "privacy": {
+        "protected": true,
+        "auth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ],
+        "unauth": [
+          "/GET"
+        ]
+      },
+      "policyResourceName": "/ipl"
+    }
+  ],
+  "resourceName": "ipl",
+  "apiName": "ipl",
+  "functionArns": [
+    {
+      "lambdaFunction": "iplLambda"
+    }
+  ],
+  "privacy": {
+    "auth": 1,
+    "unauth": 1,
+    "authRoleName": "amplify-test3-dev-154156-authRole",
+    "unAuthRoleName": "amplify-test3-dev-154156-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "iplLambda",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

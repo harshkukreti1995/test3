@@ -1,0 +1,91 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-test3-dev-154156-authRole",
+      "UnauthRoleArn": "arn:aws:iam::066299566766:role/amplify-test3-dev-154156-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::066299566766:role/amplify-test3-dev-154156-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-test3-dev-154156-deployment",
+      "UnauthRoleName": "amplify-test3-dev-154156-unauthRole",
+      "StackName": "amplify-test3-dev-154156",
+      "StackId": "arn:aws:cloudformation:us-east-1:066299566766:stack/amplify-test3-dev-154156/b05a6b90-210d-11ec-8d08-0a354c167dd7",
+      "AmplifyAppId": "depog3ox81afb"
+    },
+    "categories": {
+      "auth": {
+        "cognito8be6cf52": {}
+      },
+      "function": {
+        "mongoDB": {
+          "deploymentBucketName": "amplify-test3-dev-154156-deployment",
+          "s3Key": "amplify-builds/mongoDB-77497a4749437469642b-build.zip"
+        },
+        "signupLambda": {
+          "deploymentBucketName": "amplify-test3-dev-154156-deployment",
+          "s3Key": "amplify-builds/signupLambda-534347737267644e6c77-build.zip"
+        },
+        "profileLambda": {
+          "deploymentBucketName": "amplify-test3-dev-154156-deployment",
+          "s3Key": "amplify-builds/profileLambda-70506d4c70765a436954-build.zip",
+          "testEnv": "harshENV"
+        },
+        "loginLambda": {
+          "deploymentBucketName": "amplify-test3-dev-154156-deployment",
+          "s3Key": "amplify-builds/loginLambda-69316e56747058787846-build.zip"
+        },
+        "test3logging": {
+          "deploymentBucketName": "amplify-test3-dev-154156-deployment",
+          "s3Key": "amplify-builds/test3logging-LambdaLayerVersion53cdd39c-build.zip"
+        },
+        "iplLambda": {
+          "deploymentBucketName": "amplify-test3-dev-154156-deployment",
+          "s3Key": "amplify-builds/iplLambda-4370522f347837426967-build.zip"
+        }
+      }
+    }
+  },
+  "qa": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-test3-qa-164113-authRole",
+      "UnauthRoleArn": "arn:aws:iam::066299566766:role/amplify-test3-qa-164113-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::066299566766:role/amplify-test3-qa-164113-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-test3-qa-164113-deployment",
+      "UnauthRoleName": "amplify-test3-qa-164113-unauthRole",
+      "StackName": "amplify-test3-qa-164113",
+      "StackId": "arn:aws:cloudformation:us-east-1:066299566766:stack/amplify-test3-qa-164113/219836d0-21df-11ec-b763-127e2c9f2829",
+      "AmplifyAppId": "depog3ox81afb"
+    },
+    "categories": {
+      "auth": {
+        "cognito8be6cf52": {}
+      },
+      "function": {
+        "signupLambda": {
+          "deploymentBucketName": "amplify-test3-qa-164113-deployment",
+          "s3Key": "amplify-builds/signupLambda-534347737267644e6c77-build.zip"
+        },
+        "mongoDB": {
+          "deploymentBucketName": "amplify-test3-qa-164113-deployment",
+          "s3Key": "amplify-builds/mongoDB-77497a4749437469642b-build.zip"
+        },
+        "profileLambda": {
+          "deploymentBucketName": "amplify-test3-qa-164113-deployment",
+          "s3Key": "amplify-builds/profileLambda-34414e4a636a76567a53-build.zip"
+        },
+        "loginLambda": {
+          "deploymentBucketName": "amplify-test3-qa-164113-deployment",
+          "s3Key": "amplify-builds/loginLambda-69316e56747058787846-build.zip"
+        },
+        "test3logging": {
+          "deploymentBucketName": "amplify-test3-qa-164113-deployment",
+          "s3Key": "amplify-builds/test3logging-LambdaLayerVersion7fd079ea-build.zip"
+        },
+        "test3test": {
+          "deploymentBucketName": "amplify-test3-qa-164113-deployment",
+          "s3Key": "amplify-builds/test3test-LambdaLayerVersionb7a7b57a-build.zip"
+        }
+      }
+    }
+  }
+}

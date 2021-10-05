@@ -1,0 +1,71 @@
+{
+    "paths": [
+        {
+            "name": "/signup",
+            "lambdaFunction": "signupLambda",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/signup"
+        },
+        {
+            "name": "/login",
+            "lambdaFunction": "signupLambda",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/login"
+        },
+        {
+            "name": "/socialLogin",
+            "lambdaFunction": "signupLambda",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/socialLogin"
+        },
+        {
+            "name": "/login",
+            "lambdaFunction": "loginLambda",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/login"
+        }
+    ],
+    "resourceName": "signup",
+    "apiName": "signup",
+    "functionArns": [
+        {
+            "lambdaFunction": "signupLambda"
+        },
+        {
+            "lambdaFunction": "loginLambda"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-test3-dev-154156-authRole",
+        "unAuthRoleName": "amplify-test3-dev-154156-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "signupLambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "loginLambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "ea317dce"
+}
