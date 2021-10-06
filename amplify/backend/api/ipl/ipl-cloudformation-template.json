@@ -299,7 +299,13 @@
                 "type": "apiKey",
                 "name": "Authorization",
                 "in": "header",
-                "x-amazon-apigateway-authtype": "awsSigv4"
+                "x-amazon-apigateway-authtype": "cognito_user_pools",
+      "x-amazon-apigateway-authorizer": {
+        "type": "cognito_user_pools",
+        "providerARNs": [
+          "arn:aws:cognito-idp:us-east-1:5mmvns4prk8tpm9ogn60hgthd1:userpool/us-east-1_tKJ4dZgyy"
+        ]
+      }
               }
             },
             "definitions": {
@@ -371,7 +377,7 @@
         
         
 
-      "DeploymentAPIGWiplc6b8a8d2": {
+      "DeploymentAPIGWiplf48a4201": {
         "Type": "AWS::ApiGateway::Deployment",
         "Properties": {
           "Description": "The Development stage deployment of your API.",
