@@ -85,6 +85,11 @@
         "iplLambda": {
           "deploymentBucketName": "amplify-test3-qa-164113-deployment",
           "s3Key": "amplify-builds/iplLambda-5469453266717963594a-build.zip"
+        },
+        "cognito8be6cf52CustomMessage": {
+          "REDIRECTURL": "",
+          "EMAILSUBJECT": "",
+          "EMAILMESSAGE": ""
         }
       }
     }

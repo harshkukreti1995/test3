@@ -1,14 +1,15 @@
 {
     "identityPoolName": "test3_identitypool_8be6cf52",
-    "allowUnauthenticatedIdentities": true,
+    "allowUnauthenticatedIdentities": false,
     "resourceNameTruncated": "test38be6cf52",
     "userPoolName": "test3_userpool_8be6cf52",
     "autoVerifiedAttributes": [
         "email"
     ],
-    "mfaConfiguration": "OFF",
+    "mfaConfiguration": "OPTIONAL",
     "mfaTypes": [
-        "SMS Text Message"
+        "SMS Text Message",
+        "TOTP"
     ],
     "smsAuthenticationMessage": "Your authentication code is {####}",
     "smsVerificationMessage": "Your verification code is {####}",
@@ -45,5 +46,33 @@
             "UnauthRole",
             "Arn"
         ]
-    }
+    },
+    "hostedUI": false,
+    "useDefault": "default",
+    "userPoolGroupList": [
+        "grp1"
+    ],
+    "serviceName": "Cognito",
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "cognito8be6cf52CustomMessage",
+            "triggerProvider": "Cognito",
+            "attributes": [
+                "Arn",
+                "Name"
+            ]
+        }
+    ],
+    "userPoolGroups": true,
+    "adminQueries": true,
+    "triggers": "{\n  \"CustomMessage\": [\n    \"verification-link\"\n  ]\n}",
+    "verificationBucketName": "cognito8be6cf52verificationbucket",
+    "parentStack": {
+        "Ref": "AWS::StackId"
+    },
+    "authTriggerConnections": "[\n  {\n    \"triggerType\": \"CustomMessage\",\n    \"lambdaFunctionName\": \"cognito8be6cf52CustomMessage\"\n  }\n]",
+    "breakCircularDependency": true,
+    "permissions": [],
+    "authProviders": []
 }
